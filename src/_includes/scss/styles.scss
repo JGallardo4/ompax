@@ -34,6 +34,17 @@
     font-style: normal;
 }
 
+:root {
+    // Font sizes
+    --dog: 1.4rem;
+    // Font weights
+    --light: 300;
+    --regular: 400;
+    --semi-bold: 600;
+    --bold: 700;
+    --black: 900;
+}
+
 h2 {
     font-family: BruphyText, Times, serif;
     font-weight: 600;
@@ -42,6 +53,29 @@ h2 {
 
 p {
     font-family: BruphyText, Times, serif;
-    font-weight: 400;
+    font-weight: var(--regular);
     font-style: normal;
+    font-size: var(--dog);
+}
+
+h1, h2, h3, h4 {
+    font-family: BruphyText, Times, serif;
+    font-weight: var(--bold);
+    font-style: normal;
+    font-size: var(--dog);
+}
+
+// Drop caps
+article > p:first-of-type::first-letter {
+  color: #903;
+  font-size: 400%;
+  padding: 3rem;
+  border: #903 solid 1px;
+  margin-right: 1rem;
+  float: left;
+}
+
+// Characters per line
+h1, h2, h3, h4, p {
+    max-width: 75ch;
 }
