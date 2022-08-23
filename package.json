@@ -1,0 +1,37 @@
+{
+  "name": "ompax",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run sass && eleventy",
+    "sass": "sass --style=compressed src/_includes/scss/styles.scss public/css/styles.css",
+    "watch:eleventy": "eleventy --serve --input './src'",
+    "watch:sass": "npm run sass -- --watch",
+    "start": "npm-run-all sass --parallel watch:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JGallardo4/ompax.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JGallardo4/ompax/issues"
+  },
+  "homepage": "https://github.com/JGallardo4/ompax#readme",
+  "devDependencies": {
+    "@11ty/eleventy-navigation": "^0.3.4",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "sass": "^1.54.5"
+  }
+}

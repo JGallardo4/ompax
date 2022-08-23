@@ -1,0 +1,47 @@
+@font-face {
+    font-family: BruphyText;
+    src: local(BruphyText), url('/assets/fonts/BruphyText-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: BruphyText;
+    src: local(BruphyText), url('/assets/fonts/BruphyText-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: BruphyText;
+    src: local(BruphyText), url('/assets/fonts/BruphyText-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: BruphyText;
+    src: local(BruphyText), url('/assets/fonts/BruphyText-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: BruphyText;
+    src: local(BruphyText), url('/assets/fonts/BruphyText-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+h2 {
+    font-family: BruphyText, Times, serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+p {
+    font-family: BruphyText, Times, serif;
+    font-weight: 400;
+    font-style: normal;
+}
